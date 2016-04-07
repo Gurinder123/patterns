@@ -1,0 +1,25 @@
+asspath
+.gradle/
+.project
+.settings/
+.sonar/
+.vagrant/
+.DS_Store
+build/
+bin/
+.springBeans
+*.log*
+.buildpath
+.idea/
+*.iml
+*.ipr
+*.iws
+rebel.xml
+classes/
+out/
+*.rptconfig
+*backup.sql
+.sass-cache/
+
+# Gradle
+gradle.properties
