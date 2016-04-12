@@ -1,5 +1,8 @@
 package observer.Domain;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import observer.Display;
 import observer.Subject;
 import observer.Subscriber;
@@ -7,7 +10,13 @@ import observer.Subscriber;
 /**
  * Created by gurinder on 10/4/16.
  */
+
+@Getter
+@Setter
+@NoArgsConstructor
 public class User1 implements Subscriber, Display {
+
+    private String name;
     private String msg;
     private Subject subject;
 

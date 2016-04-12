@@ -20,6 +20,6 @@ out/
 *.rptconfig
 *backup.sql
 .sass-cache/
-
+target/
 # Gradle
 gradle.properties

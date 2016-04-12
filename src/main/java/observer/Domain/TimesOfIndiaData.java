@@ -19,15 +19,20 @@ public class TimesOfIndiaData implements Subject {
     }
 
     @Override
-    public void registerSubscriber(Subscriber s) {
-        subscriber.add(s);
+    public boolean registerSubscriber(Subscriber s) {
+        System.out.println("user added");
+        return subscriber.add(s);
     }
 
     @Override
-    public void removeSubscriber(Subscriber s) {
+    public boolean removeSubscriber(Subscriber s) {
+        boolean flag = false;
         int pos = subscriber.indexOf(s);
-        if (pos >= 0)
-            subscriber.remove(s);
+        if (pos >= 0) {
+            System.out.println("user removed");
+            return subscriber.remove(s);
+        }
+        return flag;
     }
 
     @Override
