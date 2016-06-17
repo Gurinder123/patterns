@@ -5,6 +5,9 @@ package command;
  */
 public class Car {
 
+    private int another;
+
+
     private boolean carStatus;
 
     public void switchOn() {
