@@ -1,3 +1,5 @@
+package javacustoms;
+
 /**
  * Created by gurinder on 21/6/16.
  */
@@ -6,6 +8,7 @@ public class HashMapCustomApp {
         HashMapCustom<Integer, Integer> hashMapCustom = new HashMapCustom<Integer, Integer>();
         hashMapCustom.put(21, 12);
         hashMapCustom.put(25, 121);
+        hashMapCustom.put(30, 151);
         hashMapCustom.put(30, 151);
         hashMapCustom.put(33, 15);
         hashMapCustom.put(35, 89);
@@ -70,7 +73,7 @@ class HashMapCustom<K, V> {
             Entry<K,V> previous = null;
             Entry<K,V> current = table[hash];
 
-            while(current != null){ //we have reached last entry of bucket.
+            while(current != null) { //we have reached last entry of bucket.
                 if(current.key.equals(newKey)){
                     if(previous==null){  //node has to be insert on first of bucket.
                         newEntry.next=current.next;
@@ -137,7 +140,7 @@ class HashMapCustom<K, V> {
 
 
     /**
-     * Method displays all key-value pairs present in HashMapCustom.,
+     * Method displays all key-value pairs present in javacustoms.HashMapCustom.,
      * insertion order is not guaranteed, for maintaining insertion order
      * refer LinkedHashMapCustom.
      * @param key
@@ -158,7 +161,7 @@ class HashMapCustom<K, V> {
     /**
      * Method implements hashing functionality, which helps in finding the appropriate
      * bucket location to store our data.
-     * This is very important method, as performance of HashMapCustom is very much
+     * This is very important method, as performance of javacustoms.HashMapCustom is very much
      * dependent on  this method's implementation.
      * @param key
      */
