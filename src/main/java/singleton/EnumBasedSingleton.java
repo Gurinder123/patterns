@@ -1,19 +1,19 @@
 package singleton;
 
+import lombok.Getter;
+
 /**
  * Created by gurinder on 16/6/16.
  */
+
 public enum EnumBasedSingleton {
     INSTANCE(1);
 
+    @Getter
     public int val;
 
     private EnumBasedSingleton(int val) {
         this.val = val;
-    }
-
-    public int getVal() {
-        return val;
     }
 
     public static EnumBasedSingleton getInstance() {
