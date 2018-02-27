@@ -11,6 +11,9 @@ public class Main {
 
         WeakReference<Main> weakReference = new WeakReference<>(new Main());
         weakReference.get();
+
+        // This Singleton class EagerIntializerSingleTon has readResolve method which returns the same instance that's why
+        // on deserializing new instance wouldn't be created.
         EagerIntializerSingleTon enumBasedSingleton = EagerIntializerSingleTon.getInstance();
         try {
             FileOutputStream fileOutputStream = new FileOutputStream("/home/gurinder/cat.ser");
